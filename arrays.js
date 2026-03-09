@@ -28,3 +28,25 @@ console.log('\nUsando for of:')
 for(const fruta of frutas){
     console.log('Valor: ',fruta)
 }
+
+const nums = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+]
+
+const numsPares = nums.filter((valor) => {return valor%2 === 0})
+const numsImpares = nums.filter((valor) => {return valor%2 !== 0})
+const numsVezesDois = nums.map((valor) => {return valor*2})
+
+console.log('Todos os números: ', nums)
+console.log('Números Pares: ',numsPares)
+console.log('Números Impares: ',numsImpares)
+console.log('Números mapeados (dobrados): ',numsVezesDois)
